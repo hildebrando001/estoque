@@ -22,22 +22,3 @@ Rode as migrações.
     python manage.py createsuperuser
     python manage.py runserver
 
-
-
-
-
-
-
-
-contecção via SSH git@github.com:hildebrando001/estoque.git (SSH ou HTTP = pede a senha o tempo todo)
-Git
-Python 3
-Django 3.
-HTML
-CSS
-Bootstrap 4.5
-jQuery
-
-
-
-got
