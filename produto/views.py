@@ -10,3 +10,6 @@ def produto_list(request):
 def produto_detail(request, pk):
     obj = Produto.objects.get(pk=pk)
     return render(request, 'produto_detail.html', {'object': obj})
+
+def produto_add(request):
+    return render(request, 'produto_form.html')
