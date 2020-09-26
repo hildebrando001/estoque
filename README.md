@@ -1,29 +1,30 @@
-# Estoque - Controle de estoque
+# Estoque - Stock control "My special thanks to Regis Santos: https://github.com/rg3915"
 
 
-##Como rodar o projeto?
+#How to run this project?
 
-Clone esse repositório.                                       ** 
+"""bash
+* Clone repository.                                        
     git clone https://github.com/hildebrando001/estoque.git
 
-Crie um virtualenv com Python 3.
+* Create a virtualenv with Python3
     cd estoque
     python3 -m venv .venv
 
-Ative o virtualenv.
+* Activate the virtualenv
     source .venv/bin/activate
 
-Instale as dependências.
+* Install dependencies
     pip install -r requirements.txt
 
-Rode as migrações.
+* Run migrations
     python contrib/env_gen.py
     python manage.py migrate
     python manage.py createsuperuser
 
-rode o servidor local
+* Run the local server
     python manage.py runserver
-
+"""
 
 # Links
 
