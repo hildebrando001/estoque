@@ -7,14 +7,12 @@ django.setup()
 import string
 import timeit
 from random import choice, random, randint
-from produto.models import Produto
-
+from projeto.produto.models import Produto
 
 class Utils: #Gera números aleatórios.
     @staticmethod
     def gen_digits(max_length):
         return str(''.join(choice(string.digits) for i in range(max_length)))
-
 
 class ProdutoClass:
     @staticmethod
@@ -29,9 +27,9 @@ class ProdutoClass:
                 preco = random() * randint(10, 50),
                 estoque = randint(10, 200),
             )
-            obj = Produto(**data) # Desempacota o dicionário dentro de Produto
+            obj = Produto(**data) # Desempacota o dicionário dentro de Produto # ** == kwargs
             aux.append(obj)
-        Produto.objects.bulk_create(aux)
+        Produto.objects.bulk_create(aux) #bulk_create é muito rápido
 
 
 produtos = (

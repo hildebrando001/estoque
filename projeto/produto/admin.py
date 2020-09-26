@@ -4,7 +4,7 @@ from .models import Produto
 @admin.register(Produto) #admin.site.register(Produto)
 class ProdutoAdmin(admin.ModelAdmin):   # Desenhou um layout com lista de produtos
     list_display = (                    # admin/produto/produto
-        '__str__',
+        '__str__',                      # defindo no Model
         'importado',
         'ncm',
         'preco',

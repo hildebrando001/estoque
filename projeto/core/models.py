@@ -14,4 +14,4 @@ class TimeStampedModel(models.Model):
     )
 
     class Meta:
-        abstract = True
+        abstract = True  # Means it'll be used forward as class inheritance

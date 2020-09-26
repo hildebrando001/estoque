@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
-from core.models import TimeStampedModel
-from produto.models import Produto
+from projeto.core.models import TimeStampedModel
+from projeto.produto.models import Produto
 
 MOVIMENTO = (
     ('e', 'entrada'),

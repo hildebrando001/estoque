@@ -16,5 +16,5 @@ class Produto(models.Model):
     def __str__(self):
         return self.produto
 
-    def get_absolute_url(self):
-        return reverse_lazy('produto:produto_detail', kwargs={'pk': self.pk}) # gera link para produto_detail em produto_list.html # {{ object.get_absolute_url }}
+    def get_absolute_url(self): # defines rotes as object.get_absolute_url on produto_list
+        return reverse_lazy('produto:produto_detail', kwargs={'pk':self.pk})

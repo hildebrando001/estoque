@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 
-
 {% block content %}
 
 <div class="page-header">
-    <h2>Lista de Produtos
+    <h2> <i class="fa fa-user">Lista de Produtos</i>
         <span class="pull-right">
-            <a href="{% url 'produto:produto_add' %}">
+            <a href="{% url 'produto:produto_add' %}"> 
                 <button type="button" class="btn btn-primary">
                     <span class="fa fa-plus"></span> Adicionar
                 </button>
@@ -14,7 +13,7 @@
         </span>
     </h2>
 
-    {% if object_list %}
+    {% if object_list %}                <!-- Comes from produto_list views, dictionary key -->
         <table class="table table-striped">
             <thead>
                 <tr>
