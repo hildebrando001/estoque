@@ -1,9 +1,8 @@
-# Estoque - Stock control "My special thanks to Regis Santos: https://github.com/rg3915"
+# Estoque - Stock control
 
+# How to run this project?
 
-#How to run this project?
-
-"""bash
+'''bash
 * Clone repository.                                        
     git clone https://github.com/hildebrando001/estoque.git
 
@@ -24,7 +23,8 @@
 
 * Run the local server
     python manage.py runserver
-"""
+'''
+My special thanks to [Regis Santos](https://github.com/rg3915)
 
 # Links
 
