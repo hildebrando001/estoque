@@ -23,7 +23,7 @@ def produto_add(request):
     return render(request, template_name)
 
 
-class ProdutoCreate(CreateView):
+class ProdutoCreate(CreateView): #CreateView
     model = Produto
     template_name = 'produto_form.html'
     form_class = ProdutoForm
